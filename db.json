@@ -1,0 +1,187 @@
+{
+  "pastries": [
+    {
+      "id": 1,
+      "name": "berry omelette parfait",
+      "image": "./menuPictures/berryOmeletteParfait.jpg",
+      "category": "parfait",
+      "price": 3.5
+    },
+    {
+      "id": 2,
+      "name": "berry on top cupcake",
+      "image": "./menuPictures/berryOnTopCupcake.jpg",
+      "category": "cupcake",
+      "price": 2.5
+    },
+    {
+      "id": 3,
+      "name": "cake pop",
+      "image": "./menuPictures/cakePop.jpg",
+      "category": "cake",
+      "price": 2.75
+    },
+    {
+      "id": 4,
+      "name": "carrot cake",
+      "image": "./menuPictures/carrotCake.jpg",
+      "category": "cake",
+      "price": 5.25
+    },
+    {
+      "id": 5,
+      "name": "choco brownie",
+      "image": "./menuPictures/chocoBrownie.jpg",
+      "category": "brownie",
+      "price": 4.25
+    },
+    {
+      "id": 6,
+      "name": "choco macaron",
+      "image": "./menuPictures/chocoMacaron.jpg",
+      "category": "macaron",
+      "price": 3.5
+    },
+    {
+      "id": 7,
+      "name": "choco strudle",
+      "image": "./menuPictures/chocoStrudle.jpg",
+      "category": "strudle",
+      "price": 3.5
+    },
+    {
+      "id": 8,
+      "name": "hokkaido fruit danish",
+      "image": "./menuPictures/hokkaidoFruitDanish.jpg",
+      "category": "danish",
+      "price": 3.75
+    },
+    {
+      "id": 9,
+      "name": "rasbberry choco pancake",
+      "image": "./menuPictures/raspberryChocoPancakes.jpg",
+      "category": "pancake",
+      "price": 5.5
+    },
+    {
+      "id": 10,
+      "name": "red velvet cake",
+      "image": "./menuPictures/redVelvetCake.jpg",
+      "category": "cake",
+      "price": 5.25
+    },
+    {
+      "id": 11,
+      "name": "shortcake macaron",
+      "image": "./menuPictures/shortcakeMacaron.jpg",
+      "category": "macaron",
+      "price": 3.5
+    },
+    {
+      "id": 12,
+      "name": "strawberry cake",
+      "image": "./menuPictures/strawberryCake.jpg",
+      "category": "cake",
+      "price": 5.25
+    },
+    {
+      "id": 13,
+      "name": "strawberry macaron",
+      "image": "./menuPictures/strawberryMacaron.jpg",
+      "category": "macaron",
+      "price": 3.5
+    },
+    {
+      "id": 14,
+      "name": "strawberry parfait",
+      "image": "./menuPictures/strawberryParfait.jpg",
+      "category": "parfait",
+      "price": 3.5
+    },
+    {
+      "id": 15,
+      "name": "strawberry shortcake",
+      "image": "./menuPictures/strawberryShortcake.jpg",
+      "category": "cake",
+      "price": 5.25
+    },
+    {
+      "id": 16,
+      "name": "strawberry tiramisu cake",
+      "image": "./menuPictures/strawberryTiramisuCake.jpg",
+      "category": "cake",
+      "price": 5.25
+    },
+    {
+      "id": 17,
+      "name": "tiramisu cake",
+      "image": "./menuPictures/tiramisuCake.jpg",
+      "category": "cake",
+      "price": 5.25
+    },
+    {
+      "id": 18,
+      "name": "tofu cheesecake",
+      "image": "./menuPictures/tofuCheesecake.jpg",
+      "category": "cake",
+      "price": 5.25
+    },
+    {
+      "id": 19,
+      "name": "fruit danish",
+      "image": "./menuPictures/fruitDanish.jpg",
+      "category": "danish",
+      "price": 3.75
+    }
+  ],
+  "pictures": [
+    {
+      "id": 1,
+      "img": "./galleryPictures/IMG_2851.jpg"
+    },
+    {
+      "id": 2,
+      "img": "./galleryPictures/IMG_2850.jpg"
+    },
+    {
+      "id": 3,
+      "img": "./galleryPictures/IMG_2778.jpg"
+    },
+    {
+      "id": 4,
+      "img": "./galleryPictures/IMG_2847.jpg"
+    },
+    {
+      "id": 5,
+      "img": "./galleryPictures/IMG_2845.jpg"
+    },
+    {
+      "id": 6,
+      "img": "./galleryPictures/IMG_2785.jpg"
+    },
+    {
+      "id": 7,
+      "img": "./galleryPictures/IMG_2783.jpg"
+    },
+    {
+      "id": 8,
+      "img": "./galleryPictures/IMG_2780.jpg"
+    },
+    {
+      "id": 9,
+      "img": "./galleryPictures/IMG_2779.jpg"
+    },
+    {
+      "id": 10,
+      "img": "./galleryPictures/IMG_2848.jpg"
+    },
+    {
+      "id": 11,
+      "img": "./galleryPictures/IMG_2777.jpg"
+    },
+    {
+      "id": 12,
+      "img": "./galleryPictures/IMG_2849.jpg"
+    }
+  ]
+}

@@ -1,8 +1,12 @@
+* {
+margin: 0
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +14,147 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.navBar {
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: slategrey;
+  height: 50px;
+}
+
+.App {
+  text-align: center;
+  background-color: lightcyan
+}
+
+
+.App-header {
+  background-color: #FF6B6B;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: white;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5px; /* Adjust the gap between images*/
+  justify-content: space-evenly;
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color:#FCEEBF;
+}
+
+.gallery-item img {
+  width: 250px;
+  height: 250px;
+  margin: 0px;
+  object-fit: cover;
+
+}
+
+/* styles.css */
+
+/* .pastry-card {
+  background-color: #FDE9FF;
+  position: relative;
+  width: 150px;
+  height: 400px;
+  margin: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 45px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+/* styles.css */
+
+.pastry-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pastry-card {
+  background-color: white;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: calc(8.33% - -101px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin: 3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  flex-wrap: wrap;
+}
+
+.pastry-image:hover {
+  transform: scale(1.1);
+}
+
+.pastry-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.pastry-name {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.pastry-price {
+  margin-top: 5px;
+  color: #888;
+}
+
+
+/* styles.css */
+
+.newPictureForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin: 20px;
+}
+
+.newPictureForm input {
+  width: 70%; /* Adjust the width as needed */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Adjust the border radius */
+  margin-right: 10px;
+  font-size: 14px; /* Adjust font size */
+}
+
+.newPictureForm button {
+  background-color: #18340B;
+  color: white;
+  border: none;
+  border-radius: 8px; /* Adjust the border radius */
+  padding: 10px 20px;
+  font-size: 14px; /* Adjust font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.newPictureForm button:hover {
+  background-color: pink; /* Change color on hover */
 }
