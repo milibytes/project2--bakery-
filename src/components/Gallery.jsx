@@ -38,16 +38,14 @@ function Gallery() {
         
     }    
     
- 
-
     
     return (
 
-        <div>
+        <div className="bg-gallery">
             <form className="newPictureForm" onSubmit={handleForm}>
                 {/* <label htmlFor="Submit New Photo">Submit New Picture</label> */}
                 <input type="text" name="newPicture" onChange={handlePictures} placeholder="Submit New Photo" value={newPicture}></input>
-                <button>Submit</button>
+                <button>submit</button>
             </form>
             
             

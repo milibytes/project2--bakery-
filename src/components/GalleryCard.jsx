@@ -1,14 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
+import { FaHeart } from "react-icons/fa";
 
-function GalleryCard({pictureObj}) {
+function GalleryCard({ pictureObj }) {
 
-    
+  const [showHeart, setShowHeart] = useState(false);
 
-    return (
-        <div className="gallery-item">
-            <img src={pictureObj.img} alt={pictureObj.name}></img>
-        </div>
-    )
+  const handleDoubleClick = () => {
+    setShowHeart(true);
+    setTimeout(() => {
+      setShowHeart(false);
+    }, 1500);
+  };
+
+  return (
+    <div
+      className="gallery-item"
+      
+      onDoubleClick={handleDoubleClick}
+      style={{ position: "relative" }} // Add relative positioning to the container
+    >
+      <img src={pictureObj.img} alt={pictureObj.name} />
+      {showHeart && <FaHeart className="heart-icon" />}
+    </div>
+  );
 }
 
-export default GalleryCard
+export default GalleryCard;

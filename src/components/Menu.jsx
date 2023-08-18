@@ -15,9 +15,16 @@ function Menu() {
     ));
 
   return (
-    <div className="menu-container">
+    <div className="bg-menu">
+
+      <div className="menu-container">
+
       <Search setSearchState={setSearchState} />
+
       <div className="pastry-card-container">{filteredMappedCards}</div>
+
+      </div>
+      
     </div>
   );
 }
