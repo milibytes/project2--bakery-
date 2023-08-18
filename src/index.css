@@ -1,5 +1,17 @@
+@font-face {
+  font-family: 'Black Mango';
+  src: url('/fonts/BlackMango-Bold.otf') format('opentype'), /* Update the file path */
+       url('/fonts/BlackMango-Medium.otf') format('opentype'); /* Update the file path */
+}
+
+@font-face {
+  font-family: 'Roca One';
+  src: url('/fonts/Roca-Bold.ttf') format('opentype'), /* Update the file path */
+       url('/fonts/Roca-Regular.ttf') format('opentype'); /* Update the file path */
+}
+
 * {
-margin: 0
+  margin: 0  
 }
 
 body {
@@ -9,26 +21,40 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+}  
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  monospace;
+}    
 
 .navBar {
   justify-content: space-evenly;
   display: flex;
   align-items: center;
   flex-direction: row;
-  background-color: slategrey;
-  height: 50px;
+  background-color: #E8998D;
+  height: 40px;
+  font-family: 'Roca One', serif;
+  font-size: large;
+}  
+
+/* Remove underline from all navigation links */
+.navBar a {
+  text-decoration: none;
 }
+
+/* Add underline to links on hover and focus (when active) */
+.navBar a:hover,
+.navBar a:focus {
+  text-decoration: underline;
+}
+
 
 .App {
   text-align: center;
-  background-color: lightcyan
-}
+  background-color: #EFE9E4
+}  
 
 
 .App-header {
@@ -40,51 +66,32 @@ code {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+}  
 
 .App-link {
   color: white;
-}
+}  
 
-.gallery-container {
+
+
+
+
+
+
+.menu-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.5px; /* Adjust the gap between images*/
-  justify-content: space-evenly;
-  margin-left: 100px;
-  margin-right: 100px;
-  background-color:#FCEEBF;
-}
-
-.gallery-item img {
-  width: 250px;
-  height: 250px;
-  margin: 0px;
-  object-fit: cover;
-
-}
-
-/* styles.css */
-
-/* .pastry-card {
-  background-color: #FDE9FF;
-  position: relative;
-  width: 150px;
-  height: 400px;
-  margin: 15px;
-  display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  border-radius: 45px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-} */
-/* styles.css */
+}
 
 .pastry-card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns */
+  gap: 20px; /* Gap between columns and rows */
+  margin-left: 10px;
+  margin-right: 10px;
 }
+
 
 .pastry-card {
   background-color: white;
@@ -117,6 +124,7 @@ code {
 .pastry-name {
   margin-top: 10px;
   font-weight: bold;
+ 
 }
 
 .pastry-price {
@@ -124,8 +132,62 @@ code {
   color: #888;
 }
 
+/* Your existing CSS rules */
 
-/* styles.css */
+/* Styling for the search bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  width: 70%;
+}
+
+.search-input {
+  flex-grow: 1;
+  border: none;
+  padding: 5px 10px; /* Added padding for the icon */
+  font-size: 14px;
+  background-repeat: no-repeat;
+  background-position: right 10px center; /* Adjust position of the icon */
+}
+
+
+
+
+
+
+
+
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5px; /* Adjust the gap between images*/
+  justify-content: space-evenly;
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color:#EFE9E4;
+}  
+
+.gallery-item img {
+  width: 200px;
+  height: 200px;
+  margin: 0px;
+  object-fit: cover;
+
+}  
+
+
+
+
+
+
+
+
+
+
 
 .newPictureForm {
   display: flex;
@@ -157,4 +219,75 @@ code {
 
 .newPictureForm button:hover {
   background-color: pink; /* Change color on hover */
+}
+
+
+
+
+
+
+
+
+
+.bg-home {
+  position: relative;
+}
+
+.macaronHome {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  max-width: 520px;
+}
+
+.macaronHome::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px; /* Adjust the height as needed */
+  background-color: white;
+  z-index: -1;
+}
+
+.text-top,
+.text-right,
+.text-left,
+.text-bottom {
+  position: absolute;
+  z-index: 2;
+  color: #355B26;
+}
+
+.text-top {
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3.5rem; /* Updated font size */
+  font-family: 'Black Mango', cursive;
+}
+
+.text-left {
+  top: 50%;
+  left: 435px;
+  transform: translateY(-50%);
+  font-size: 3.5rem;
+  font-family: 'Black Mango', cursive;
+}
+
+.text-right {
+  top: 37%;
+  right: 355px;
+  transform: translateY(-50%);
+  font-size: 3.5rem;
+  font-family: 'Black Mango', cursive;
+}
+
+.text-bottom {
+  bottom: 130px;
+  left: 60%;
+  transform: translateX(-50%);
+  font-size: 3.5rem;
+  font-family: 'Black Mango', cursive;
 }

@@ -182,6 +182,14 @@
     {
       "id": 12,
       "img": "./galleryPictures/IMG_2849.jpg"
+    },
+    {
+      "img": "https://www.bhg.com/thmb/EHmLSubICJfav7HZ_CHXO8jVNag=/1460x0/filters:no_upscale():strip_icc()/RU333730-ddadead55971430296d57ac91fb4674c.jpg",
+      "id": 13
+    },
+    {
+      "img": "https://www.bhg.com/thmb/EHmLSubICJfav7HZ_CHXO8jVNag=/1460x0/filters:no_upscale():strip_icc()/RU333730-ddadead55971430296d57ac91fb4674c.jpg",
+      "id": 14
     }
   ]
 }
